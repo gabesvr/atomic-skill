@@ -1,0 +1,21 @@
+name: AtomicSkill
+version: '${project.version}'
+main: com.gabesvr.atomicskill.AtomicSkillPlugin
+api-version: '1.20'
+authors: [ gabesvr ]
+description: I Am Atomic Ultimate Skill with full cinematics, audio, and disintegration effects.
+
+commands:
+  atomic:
+    description: Master command for I Am Atomic skill
+    permission: atomicskill.use
+    usage: /atomic [cast|sword|reload]
+    aliases: [iamatomic, atomiccast]
+
+permissions:
+  atomicskill.use:
+    description: Permission to cast I Am Atomic
+    default: true
+  atomicskill.admin:
+    description: Permission to give items and reload the plugin
+    default: op

@@ -1,0 +1,51 @@
+# ======================================================
+#            ATOMIC SKILL - CONFIGURAÇÃO GERAL
+#          Criado para servidores Purpur / Paper
+# ======================================================
+
+skill:
+  # Tempo de recarga (Cooldown) em segundos
+  cooldown-seconds: 45
+
+  # Raio máximo da esfera de destruição (em blocos)
+  radius: 28
+
+  # Dano causado às entidades dentro da esfera (500 = morte instantânea)
+  damage: 500.0
+
+  # Fazer todos os blocos dentro da esfera sumirem (vaporização)
+  vaporize-blocks: true
+
+  # Bedrock e blocos inquebráveis nunca serão destruídos
+  protect-bedrock: true
+
+  # Regeneração de Terreno:
+  # Se ativado, todos os blocos vaporizados se reconstroem automaticamente!
+  regenerate-terrain: false
+  regeneration-delay-seconds: 30
+
+  # Som customizado do anime (configurado no Resource Pack)
+  sound:
+    key: "atomic:skill.atomic"
+    volume: 60.0
+    pitch: 1.0
+
+  # Mensagens e Títulos
+  cinematics:
+    darkness-nearby-radius: 60
+    chant-subtitle: "&5&lI... am..."
+    climax-title: "&d&lI AM ATOMIC"
+    climax-subtitle: "&5&oThe ultimate secret technique"
+
+# Configurações da Espada "Atomic Blade"
+item:
+  material: "NETHERITE_SWORD"
+  name: "&#9400D3&lAtomic Blade"
+  lore:
+    - "&7A lâmina lendária da Eminência nas Sombras."
+    - ""
+    - "&e[Clique com o Botão Direito]"
+    - "&dLiberar a técnica: &5&lI AM ATOMIC"
+    - ""
+    - "&cCooldown: &f%cooldown%s"
+  unbreakable: true
