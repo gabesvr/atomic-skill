@@ -82,7 +82,7 @@ public class AtomicItemListener implements Listener {
             event.setCancelled(true);
             Player player = event.getPlayer();
             if (!player.hasPermission("atomicskill.use")) {
-                player.sendMessage(Component.text("Você não é digno de invocar o I Am Atomic! Apenas o Dono pode liberar este poder.", NamedTextColor.RED));
+                player.sendMessage(Component.text("Você não é digno de invocar o I Am Atomic! Apenas o Owner pode liberar este poder.", NamedTextColor.RED));
                 return;
             }
             atomicManager.cast(player);
