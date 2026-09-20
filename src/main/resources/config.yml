@@ -3,6 +3,14 @@
 #          Criado para servidores Purpur / Paper
 # ======================================================
 
+# Envio 100% Automático do Pacote de Recursos com o Áudio do Anime
+resource-pack:
+  auto-send-on-join: true
+  url: "https://github.com/gabesvr/atomic-skill/releases/download/v1.0.0/AtomicPack.zip"
+  hash: "e18dd86ed0d30a6618164d4fbb89c52cf07087d5"
+  required: false
+  prompt-message: "&5&lAtomic Skill &8» &7Baixe os efeitos sonoros originais do anime (&dI AM ATOMIC&7)!"
+
 skill:
   # Tempo de recarga (Cooldown) em segundos
   cooldown-seconds: 45
