@@ -15,7 +15,7 @@ commands:
 permissions:
   atomicskill.use:
     description: Permission to cast I Am Atomic
-    default: true
+    default: op
   atomicskill.admin:
     description: Permission to give items and reload the plugin
     default: op

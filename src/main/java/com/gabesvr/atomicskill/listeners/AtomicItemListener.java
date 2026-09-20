@@ -3,6 +3,7 @@ package com.gabesvr.atomicskill.listeners;
 import com.gabesvr.atomicskill.AtomicSkillPlugin;
 import com.gabesvr.atomicskill.ability.AtomicManager;
 import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
 import org.bukkit.Bukkit;
@@ -80,6 +81,10 @@ public class AtomicItemListener implements Listener {
         if (plainName.contains("Atomic Blade")) {
             event.setCancelled(true);
             Player player = event.getPlayer();
+            if (!player.hasPermission("atomicskill.use")) {
+                player.sendMessage(Component.text("Você não é digno de invocar o I Am Atomic! Apenas o Dono pode liberar este poder.", NamedTextColor.RED));
+                return;
+            }
             atomicManager.cast(player);
         }
     }
